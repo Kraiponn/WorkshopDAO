@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/image_url"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/mock23"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="9dp"
+        android:background="#80000000">
+        <TextView
+            android:id="@+id/text_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello ID:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:padding="9dp"
+        android:background="#80000000">
+        <TextView
+            android:id="@+id/text_caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Caption"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#fff" />
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2018-07-07T09:09:59"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>-->
+
+</FrameLayout>

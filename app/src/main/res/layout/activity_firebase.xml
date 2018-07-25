@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FirebaseActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/mock23"
+        android:scaleType="centerCrop"/>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="30dp"
+                android:background="@drawable/bg_currency_login">
+
+                <EditText
+                    android:id="@+id/edtId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawablePadding="9dp"
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+                    android:hint="id:"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:background="@drawable/edit_box_shape"/>
+                <EditText
+                    android:id="@+id/edtTempS1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/ic_temp"
+                    android:drawablePadding="9dp"
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+                    android:hint="Sensor1:"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:background="@drawable/edit_box_shape"/>
+                <EditText
+                    android:id="@+id/edtTempS2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/ic_temp"
+                    android:drawablePadding="9dp"
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+                    android:hint="Sensor2:"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:background="@drawable/edit_box_shape"/>
+                <EditText
+                    android:id="@+id/edtDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/ic_android"
+                    android:drawablePadding="9dp"
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionDone"
+                    android:maxLines="3"
+                    android:lines="3"
+                    android:hint="Details:"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:background="@drawable/edit_box_shape"/>
+
+                <Button
+                    android:id="@+id/btnFeedData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_white_state"
+                    android:drawableStart="@drawable/ic_refresh"
+                    android:fontFamily="@font/my_custom_font"
+                    android:text="Feed Data"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="15dp"
+                android:text="Result on Firebase"
+                android:fontFamily="@font/my_custom_font"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#ff0314"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
